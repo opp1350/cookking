@@ -55,4 +55,6 @@ const Button = styled.TouchableOpacity<StyledBtnProps>`
 	${props => props.small && css`height: 22px; `}
 `
 
-export default Button
+export default Button;
+
+// 이건 경량님에게 보내는 암호
