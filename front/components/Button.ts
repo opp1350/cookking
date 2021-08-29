@@ -3,27 +3,27 @@ import { COLORS, FONTSIZES, FONTS } from '../constants'
 
 interface StyledBtnProps {
 	// color
-	primary_500? : boolean;
-	primary_600? : boolean;
-	primary_700? : boolean;
+	primary_500?: boolean;
+	primary_600?: boolean;
+	primary_700?: boolean;
 
 	// type
-	text? : boolean;
-	bottomFixed? : boolean;
+	text?: boolean;
+	bottomFixed?: boolean;
 
 	// round : 기본 solid
-	round? : boolean;
+	round?: boolean;
 
 	// height
-	large? : boolean;
+	large?: boolean;
 	// medium? : boolean;
-	small? : boolean;
+	small?: boolean;
 
 }
 
 interface StyledBtnContProps {
-	white? : boolean;
-	disabled? : boolean;
+	white?: boolean;
+	disabled?: boolean;
 }
 
 export const ButtonText = styled.Text<StyledBtnContProps>`
@@ -33,8 +33,10 @@ export const ButtonText = styled.Text<StyledBtnContProps>`
 `
 
 const Button = styled.TouchableOpacity<StyledBtnProps>`
+	flex: 1;
 	width: auto;
-	padding: 0 8px; 
+	margin: 0 4px;
+	padding: 0 8px;
 	align-items: center;
 	justify-content: center;
 	height: 32px;
@@ -44,7 +46,7 @@ const Button = styled.TouchableOpacity<StyledBtnProps>`
 	${props => props.primary_700 && css` background-color: ${COLORS.primary_700};`}
 	${props => props.primary_600 && css` background-color: ${COLORS.primary_600};`}
 	${props => props.primary_500 && css && css
-	` background-color: ${COLORS.primary_500};`}
+		` background-color: ${COLORS.primary_500};`}
 
 	${props => props.text && css` ${COLORS.transparent}`}
 	${props => props.bottomFixed && css`
