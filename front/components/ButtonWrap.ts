@@ -9,7 +9,8 @@ const ButtonWrap = styled.View<StyledBtnWrapProps>`
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-
+	margin: 0 -4px;
+	
 	${props => props.vertical && css`
 	flex-direction: column;
     `}

@@ -33,7 +33,9 @@ export const ButtonText = styled.Text<StyledBtnContProps>`
 `
 
 const Button = styled.TouchableOpacity<StyledBtnProps>`
+	flex: 1;
 	width: auto;
+	margin: 0 4px;
 	padding: 0 8px; 
 	align-items: center;
 	justify-content: center;
