@@ -33,6 +33,10 @@ docker rm -f db
 ```
 위 명령어로 삭제 필요
 
+## Profiles
+
+만약 local에서 실행하면 profile 설정을 local 로 설정 
+
 ---
 # 프론트
 ## 프론트 실행 방법
