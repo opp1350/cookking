@@ -31,6 +31,7 @@ public class SearchServiceImpl implements SearchService {
        return createSearchMapper.toDto(result);
     }
 
+    // TODO: 아직 개발 안됨
     @Override
     public SearchDto findByMemberId(Long memberId) {
         return null;
